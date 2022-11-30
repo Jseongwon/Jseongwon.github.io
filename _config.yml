@@ -2,16 +2,16 @@
 
 # GENERAL SITE SETTINGS
 # title: This will be displayed as the website's name in your browser tab.
-title: Neumorphism
+title: Portfolio
 # description: This will be meta HTML tag content. This can be ignored.
 description: Personal website powered by Jekyll
 # baseurl: The subpath of your site
 # > set this to "", if you renamed the repository to <user>.github.io
-baseurl: "/neumorphism"
+baseurl: "/portfolio"
 
 # LANDING PAGE
 # username: This will displayed on the landing page as your name.
-username: Neumorphism
+username: Seongwon Jeong
 # typing_text: This will be typed before 'scroll down for more'.
 # > set this to your job title, e.g. Fullstack Developer
 typing_text: Jekyll Theme
@@ -86,7 +86,7 @@ contact_description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, se
 # GITHUB-METADATA
 # Set this to your forked repository
 # > e.g. <user>/<user>.github.io
-repository: longpdo/neumorphism
+repository: longpdo/Jseongwon
 projects:
   # sortby:
   # > set this to pushed, if you want to sort your github repositories by time.
@@ -116,6 +116,7 @@ google-analytics:
 
 plugins:
   - "jekyll-github-metadata"
+  - "jekyll-coffeescript"
 
 exclude:
   [
