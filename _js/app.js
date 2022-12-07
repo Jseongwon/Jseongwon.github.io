@@ -33,8 +33,6 @@ $(document).ready(function() {
     delay: 100,
     once: true
   });
-
-  randomizeOrder();
 });
 
 /* FUNCTIONS */

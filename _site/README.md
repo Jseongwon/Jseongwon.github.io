@@ -1,4 +1,4 @@
-# Neumorphism <!-- omit in toc -->
+# Seongwon Jeong's CV <!-- omit in toc -->
 
 > Neumorphism designed Jekyll theme for personal websites, portfolios and resumes.
 

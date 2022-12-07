@@ -1,28 +1,67 @@
 <h1 class="title">{{site.skills_title}}</h1>
 
-<div id="skills">
-  <input type="radio" id="all" name="filter" checked />
-  <label class="filter-button neumorphism-button" for="all">All</label>
-  <input type="radio" id="language" name="filter" />
-  <label class="filter-button neumorphism-button" for="language">Languages</label>
-  <input type="radio" id="framework" name="filter" />
-  <label class="filter-button neumorphism-button" for="framework">Frameworks</label>
-  <input type="radio" id="tool" name="filter" />
-  <label class="filter-button neumorphism-button" for="tool">Tools</label>
+<div id="skills" class="section-box">
+    <input type="radio" id="all" name="filter" checked/>
+    <label class="filter-button neumorphism-button" for="all">All</label>
+    <input type="radio" id="language" name="filter"/>
+    <label class="filter-button neumorphism-button" for="language">Languages</label>
+    <input type="radio" id="script" name="filter"/>
+    <label class="filter-button neumorphism-button" for="script">Script Languages</label>
+    <input type="radio" id="framework" name="filter"/>
+    <label class="filter-button neumorphism-button" for="framework">Frameworks</label>
+    <input type="radio" id="tool" name="filter"/>
+    <label class="filter-button neumorphism-button" for="tool">Tools</label>
 
-  {% for language in site.data.skills-languages %}
-    <div skill-type="language" skill-weight="{{language.weight}}" data-aos="zoom-in">
-      {{language.name}}
+    {% for language in site.data.skills-languages %}
+    <div skill-type="language" skill-weight="{{language.weight}}" data-aos="zoom-in" class="aos-progress">
+        <div class="col-sm-6 progress-bar animated">
+            <div class="bar-data">
+                <span class="bar-title">{{language.name}}</span>
+                <span class="bar-value">{{language.value}}</span>
+            </div>
+            <div class="bar-line">
+                <span class="bar-fill" bar-width="{{language.value}}" style="width: {{ language.value }};"></span>
+            </div>
+        </div>
     </div>
-  {% endfor %}
-  {% for framework in site.data.skills-frameworks %}
-    <div skill-type="framework" skill-weight="{{framework.weight}}" data-aos="zoom-in">
-      {{framework.name}}
+    {% endfor %}
+    {% for script in site.data.skills-scripts %}
+    <div skill-type="script" skill-weight="{{script.weight}}" data-aos="zoom-in" class="aos-progress">
+        <div class="col-sm-6 progress-bar animated">
+            <div class="bar-data">
+                <span class="bar-title">{{script.name}}</span>
+                <span class="bar-value">{{script.value}}</span>
+            </div>
+            <div class="bar-line">
+                <span class="bar-fill" bar-width="{{script.value}}" style="width: {{ script.value }};"></span>
+            </div>
+        </div>
     </div>
-  {% endfor %}
-  {% for tool in site.data.skills-tools %}
-    <div skill-type="tool" skill-weight="{{tool.weight}}" data-aos="zoom-in">
-      {{tool.name}}
+    {% endfor %}
+    {% for framework in site.data.skills-frameworks %}
+    <div skill-type="framework" skill-weight="{{framework.weight}}" data-aos="zoom-in" class="aos-progress">
+        <div class="col-sm-6 progress-bar animated">
+            <div class="bar-data">
+                <span class="bar-title">{{framework.name}}</span>
+                <span class="bar-value">{{framework.value}}</span>
+            </div>
+            <div class="bar-line">
+                <span class="bar-fill" bar-width="{{framework.value}}" style="width: {{ framework.value }};"></span>
+            </div>
+        </div>
     </div>
-  {% endfor %}
+    {% endfor %}
+    {% for tool in site.data.skills-tools %}
+    <div skill-type="tool" skill-weight="{{tool.weight}}" data-aos="zoom-in" class="aos-progress">
+        <div class="col-sm-6 progress-bar animated">
+            <div class="bar-data">
+                <span class="bar-title">{{tool.name}}</span>
+                <span class="bar-value">{{tool.value}}</span>
+            </div>
+            <div class="bar-line">
+                <span class="bar-fill" bar-width="{{tool.value}}" style="width: {{ tool.value }};"></span>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
 </div>

@@ -1,0 +1,21 @@
+# > name: Name of your programming language
+# > weight: Describes how good you know the language - values from 1 up to 5
+#
+# Example of a Language
+# - name: Language
+#   value: 100%
+
+- name: HTML
+  value: 90%
+
+- name: CSS
+  value: 90%
+
+- name: JavaScript
+  value: 95%
+
+- name: TypeScript
+  value: 80%
+
+- name: PHP
+  value: 90%

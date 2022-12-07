@@ -4,7 +4,7 @@
 # title: This will be displayed as the website's name in your browser tab.
 title: Portfolio
 # description: This will be meta HTML tag content. This can be ignored.
-description: Personal website powered by Jekyll
+description: Sungwon Jeong's CV site powered by Jekyll
 # baseurl: The subpath of your site
 # > set this to "", if you renamed the repository to <user>.github.io
 baseurl: "/portfolio"
@@ -14,7 +14,7 @@ baseurl: "/portfolio"
 username: Seongwon Jeong
 # typing_text: This will be typed before 'scroll down for more'.
 # > set this to your job title, e.g. Fullstack Developer
-typing_text: Jekyll Theme
+typing_text: Curriculum Vitae(CV)
 # email: Your E-Mail address for the email button.
 email: email@example.com
 # For every social button you want to display, set your username or userid
@@ -42,13 +42,13 @@ about_me_description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, s
 # > setting this to false, will omit the Skills section
 show_skills_card: true
 # about_me_title: The will be displayed as the title in the Skills section
-skills_title: Skills
+skills_title: Professional Skills
 
 # TIMELINE SECTION
 # show_timeline_card:
 # > setting this to true, will display the Timeline section
 # > setting this to false, will omit the Timeline section
-show_timeline_card: true
+show_timeline_card: false
 # timeline_title: The will be displayed as the title in the Timeline section
 timeline_title: Education & Experience
 # cv_download_link: The link where you host your cv.
