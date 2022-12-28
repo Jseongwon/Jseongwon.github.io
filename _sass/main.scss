@@ -424,6 +424,84 @@ a {
   .filter-button {
     display: none;
   }
+
+  //  Custom
+  .aos-progress {
+    width:90%;
+  }
+
+  .col-sm-6 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .progress-bar {
+    position: relative;
+    margin-bottom: 40px; }
+  .progress-bar .bar-data {
+    font-size: 14px;
+    line-height: 1.1;
+    padding-right: 40px; }
+  .progress-bar .bar-value {
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block; }
+  .progress-bar .bar-title {
+    display: block;
+    margin-bottom: 5px; }
+  .progress-bar .bar-line:after,
+  .progress-bar .bar-fill {
+    background-color: $primary-color;
+  }
+  .progress-bar .bar-fill {
+    width: 0;
+    height: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: width 400ms ease-out 100ms;
+    -moz-transition: width 400ms ease-out 100ms;
+    transition: width 400ms ease-out 100ms; }
+  .progress-bar .bar-line {
+    height: 5px;
+    position: relative; }
+  .progress-bar .bar-line:after {
+    content: '';
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+
+  @media (min-width: 768px) {
+    .section-skills .section-box .row:last-child .progress-bar {
+      margin-bottom: 0; } }
+  @media (max-width: 767px) {
+    .section-skills .section-box {
+      padding-bottom: 35px; }
+    .section-skills .section-box .row:last-child .col-sm-6:last-child .progress-bar {
+      margin-bottom: 0; } }
+
+  @media (min-width: 768px) {
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+      float: left;
+    }
+
+    .col-sm-6 {
+      width: 100%; }
+  }
 }
 
 /* Timeline Section */
@@ -750,84 +828,6 @@ a {
     input[id="tool"]:checked ~ div[skill-type="language"],
     input[id="tool"]:checked ~ div[skill-type="framework"] {
       @include filter-out;
-    }
-
-    //  Custom
-    .aos-progress {
-      width:90%;
-    }
-
-    .col-sm-6 {
-      position: relative;
-      min-height: 1px;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    .progress-bar {
-      position: relative;
-      margin-bottom: 40px; }
-    .progress-bar .bar-data {
-      font-size: 14px;
-      line-height: 1.1;
-      padding-right: 40px; }
-    .progress-bar .bar-value {
-      font-size: 16px;
-      position: absolute;
-      right: 0;
-      top: 0;
-      display: block; }
-    .progress-bar .bar-title {
-      display: block;
-      margin-bottom: 5px; }
-    .progress-bar .bar-line:after,
-    .progress-bar .bar-fill {
-      background-color: $primary-color;
-    }
-    .progress-bar .bar-fill {
-      width: 0;
-      height: 100%;
-      display: block;
-      position: relative;
-      z-index: 1;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px;
-      -webkit-transition: width 400ms ease-out 100ms;
-      -moz-transition: width 400ms ease-out 100ms;
-      transition: width 400ms ease-out 100ms; }
-    .progress-bar .bar-line {
-      height: 5px;
-      position: relative; }
-    .progress-bar .bar-line:after {
-      content: '';
-      opacity: 0.2;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px; }
-
-    @media (min-width: 768px) {
-      .section-skills .section-box .row:last-child .progress-bar {
-        margin-bottom: 0; } }
-    @media (max-width: 767px) {
-      .section-skills .section-box {
-        padding-bottom: 35px; }
-      .section-skills .section-box .row:last-child .col-sm-6:last-child .progress-bar {
-        margin-bottom: 0; } }
-
-    @media (min-width: 768px) {
-      .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-        float: left;
-      }
-
-      .col-sm-6 {
-        width: 100%; }
     }
   }
 
